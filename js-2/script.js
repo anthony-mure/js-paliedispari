@@ -23,10 +23,11 @@ console.log(usernumber);
   }
 
  /* sommo il numero dell'utente e quello del pc */
+
 let pcnumber = getPcRandomNumber();
 console.log(pcnumber);
-let sum = usernumber + pcnumber;
 
+let sum = usernumber + pcnumber;
 console.log(sum);
 
 /*Stabilisco se la somma dei 2 numeri è pari o dispari attraverso una funzione*/
@@ -40,3 +41,19 @@ function checkEvenOrOdd(sum){
      }
 }
 console.log(checkEvenOrOdd(sum));
+
+/* Dichiaro chi ha vinto confrontando la risposta dell'utente con il risultato finale (pari o dispari ottenuto dalla somma)*/
+
+let result = checkEvenOrOdd(sum);
+
+function finalResult(pariDispari , result){
+  if(pariDispari === result){
+    return "HAI VINTO!!!"
+  }
+  else if(pariDispari != result){
+    return "HAI PERSO!!!"
+  }
+  
+}
+let final = finalResult(pariDispari , result);
+ console.log(final);

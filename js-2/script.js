@@ -12,14 +12,20 @@ console.log(pariDispari);
 
 /* L'utente sceglie un numero da 1 a 5 */
 
-const usernumber = parseInt(prompt("SCEGLIERE E SCRIVERE UN NUMERO DA 1 A 5"));
+let usernumber = parseInt(prompt("SCEGLIERE E SCRIVERE UN NUMERO DA 1 A 5"));
 console.log(usernumber);
 
 /*Genero un numero random da 1 a 5 per il computer attraverso una funzione*/
 
-  let pcRandomNumber = Math.floor(Math.random() * 5) +1;
-
   function getPcRandomNumber(){
-    return(pcRandomNumber);
+    let pcRandomNumber = Math.floor(Math.random() * 5) +1;
+    return pcRandomNumber;
   }
-   getPcRandomNumber(pcRandomNumber);
+
+ /* sommo il numero dell'utente e quello del pc */
+let pcnumber = getPcRandomNumber();
+console.log(pcnumber);
+let sum = usernumber + pcnumber;
+
+console.log(sum);
+

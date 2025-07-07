@@ -22,4 +22,4 @@ console.log(usernumber);
   function getPcRandomNumber(){
     return(pcRandomNumber);
   }
-   getPcRandomNumber();
+   getPcRandomNumber(pcRandomNumber);

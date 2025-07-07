@@ -46,7 +46,7 @@ console.log(checkEvenOrOdd(sum));
 
 let result = checkEvenOrOdd(sum);
 
-function finalResult(pariDispari , result){
+function finalResult(){
   if(pariDispari === result){
     return "HAI VINTO!!!"
   }
@@ -55,5 +55,5 @@ function finalResult(pariDispari , result){
   }
   
 }
-let final = finalResult(pariDispari , result);
+let final = finalResult();
  console.log(final);

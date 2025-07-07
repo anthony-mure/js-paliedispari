@@ -4,3 +4,22 @@ Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzion
 Sommiamo i due numeri
 Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 Dichiariamo chi ha vinto.*/
+
+/*L'utente sceglie pari o dispari*/
+
+const pariDispari = prompt("SCEGLIERE E SCRIVERE PARI 0 DISPARI!");
+console.log(pariDispari);
+
+/* L'utente sceglie un numero da 1 a 5 */
+
+const usernumber = parseInt(prompt("SCEGLIERE E SCRIVERE UN NUMERO DA 1 A 5"));
+console.log(usernumber);
+
+/*Genero un numero random da 1 a 5 per il computer attraverso una funzione*/
+
+  let pcRandomNumber = Math.floor(Math.random() * 5) +1;
+
+  function getPcRandomNumber(){
+    return(pcRandomNumber);
+  }
+   getPcRandomNumber();

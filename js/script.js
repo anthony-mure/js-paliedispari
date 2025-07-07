@@ -25,4 +25,14 @@ console.log(wordSplit);
 let wordReverse = wordSplit.join('');
 console.log(wordReverse);
 
+/*Creare una funzione per capire se la parola inserita è palindroma*/
 
+function wordPalindroma(word , wordReverse){
+    if(word === wordReverse){
+      return "La parola è PALINDROMA!"
+    }
+    else{
+      return "La parola NON è PALINDROMA!"
+    }
+}
+console.log(wordPalindroma(word , wordReverse));

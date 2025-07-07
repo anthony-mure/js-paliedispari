@@ -20,4 +20,9 @@ console.log(wordSplit);
  wordSplit = wordSplit.reverse();
 console.log(wordSplit);
 
+/*unisco le lettere dell'ordine invertito della parola dell'utente*/
+
+let wordReverse = wordSplit.join('');
+console.log(wordReverse);
+
 

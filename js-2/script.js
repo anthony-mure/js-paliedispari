@@ -7,7 +7,7 @@ Dichiariamo chi ha vinto.*/
 
 /*L'utente sceglie pari o dispari*/
 
-const pariDispari = prompt("SCEGLIERE E SCRIVERE PARI 0 DISPARI!");
+const pariDispari = prompt("SCEGLIERE E SCRIVERE PARI 0 DISPARI");
 console.log(pariDispari);
 
 /* L'utente sceglie un numero da 1 a 5 */
@@ -34,10 +34,10 @@ console.log(sum);
 
 function checkEvenOrOdd(sum){
      if(sum % 2 === 0){
-        return "PARI!"
+        return "PARI"
      }
      else{
-      return "DISPARI!"
+      return "DISPARI"
      }
 }
 console.log(checkEvenOrOdd(sum));
@@ -46,14 +46,10 @@ console.log(checkEvenOrOdd(sum));
 
 let result = checkEvenOrOdd(sum);
 
-function finalResult(){
   if(pariDispari === result){
-    return "HAI VINTO!!!"
+    console.log("HAI VINTO!!!");  
   }
-  else if(pariDispari != result){
-    return "HAI PERSO!!!"
+  else{
+    console.log( "HAI PERSO!!!");  
   }
   
-}
-let final = finalResult();
- console.log(final);

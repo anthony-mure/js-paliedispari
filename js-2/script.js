@@ -29,3 +29,14 @@ let sum = usernumber + pcnumber;
 
 console.log(sum);
 
+/*Stabilisco se la somma dei 2 numeri è pari o dispari attraverso una funzione*/
+
+function checkEvenOrOdd(sum){
+     if(sum % 2 === 0){
+        return "PARI!"
+     }
+     else{
+      return "DISPARI!"
+     }
+}
+console.log(checkEvenOrOdd(sum));
